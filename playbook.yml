@@ -1,5 +1,8 @@
 ---
-- hosts: all
-  become: yes
+- name: ping localhost
+  hosts: localhost
+  
   tasks:
-    - ping
+
+  - name: download bar
+    ping:
