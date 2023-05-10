@@ -1,8 +1,10 @@
--—-
+        state: present
+[admin1@lscj ansible]$ vim nano.yml
+---
 - hosts: all
   become: true
   tasks:
     - name: nano install
       ansible.builtin.yum:
         name: nano
-        state: present
+        :state: present
